@@ -1,0 +1,59 @@
+div.el-pagination {
+  color: #606266;
+  font-weight: normal;
+
+  .el-pagination__total {
+    margin-right: 4px;
+  }
+
+  .el-select .el-input .el-input__inner {
+    height: 24px;
+  }
+
+  span:not([class*=suffix]), button {
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .el-pager .more::before {
+    line-height: 26px;
+  }
+
+  .el-pager li {
+    min-width: 24px;
+    height: 24px;
+    line-height: 24px;
+    margin: 0 4px;
+    padding: 0;
+    font-size: 14px;
+    color: rgba(0,0,0,0.65);
+
+    &:hover, &.active {
+      background: rgba(17,119,255,0.1);
+      border-radius: 2px;
+      font-weight: 500;
+      color: #1177FF;
+    }
+  }
+
+  .el-select .el-input {
+    width: 90px;
+    margin: 0 4px;
+  }
+
+  button {
+    padding: 0 4px;
+  }
+
+  .btn-next {
+    padding-left: 4px;
+  }
+
+  .btn-prev {
+    padding-right: 4px;
+  }
+
+  .el-pagination__sizes {
+    margin-right: 0;
+  }
+}
