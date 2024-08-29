@@ -14,7 +14,7 @@ export const useStore = defineStore('user', {
         localStorage.setItem('user', { ...value, user: true })
         resolve()
         // 登录接口接入
-        // login(value).then(res => {
+        // login(value).then(res => { 
         //   localStorage.setItem('user', { ...res, user: true })
         //   resolve(res)
         // }).catch(error => {
