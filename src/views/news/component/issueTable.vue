@@ -63,7 +63,7 @@ const editRule = (row) => {
 }
 const searchOption = ref([
   {
-    label: 12,
+    label: '测试',
     prop: 'name',
     element: 'el-input',
     maxlength: '8',

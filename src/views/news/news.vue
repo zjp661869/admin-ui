@@ -22,10 +22,10 @@
     <div class="content">
       <el-tabs v-model="tagValue">
         <el-tab-pane label="已发布" name="published">
-          <issueTable />
+          <issueTable v-if="tagValue === 'published'" />
         </el-tab-pane>
         <el-tab-pane label="草稿" name="draft">
-          <issueTable />
+          <issueTable v-if="tagValue === 'draft'" />
         </el-tab-pane>
       </el-tabs>
     </div>
