@@ -9,7 +9,7 @@ const store = useStore(pinia)
 const routes = [
   { path: "/", redirect: '/news', name: 'home' },
   { path: "/login", name: 'login', component: () => import("@/views/login/login.vue") },
-  { path: "/news", name: 'news', component: () => import("@/views/news/news.vue") },
+  // { path: "/news", name: 'news', component: () => import("@/views/news/news.vue") },
 ]
 
 Vue.use(Router)
