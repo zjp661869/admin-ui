@@ -17,7 +17,6 @@ const R = new Router({
   scrollBehavior: () => ({ y: 0 }),
   routes: routes
 })
-
 R.beforeEach(async(to, from, next) => {
   NProgress.start()
   if (store.user.user) {
@@ -26,12 +25,10 @@ R.beforeEach(async(to, from, next) => {
     } else {
       next()
     }
+  } else if (to.path !== '/login') {
+    next('/login')
   } else {
-    if (to.path !== '/login') {
-      next('/login')
-    } else {
-      next()
-    }
+    next()
   }
   NProgress.done()
 })
