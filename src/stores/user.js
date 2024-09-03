@@ -8,7 +8,7 @@ const modules = import.meta.glob('@/views/**/*.vue')
 export const useStore = defineStore('user', {
   state: () => ({
     user: {
-      user: locget('user')?.user || false, // 标识
+      token: locget('user')?.token || false, // 标识登录
       menuList: locget('user')?.menuList || [] // 动态路由
     },
     refresh: true,
@@ -20,10 +20,10 @@ export const useStore = defineStore('user', {
     // 登录接口
     setUser(value) {
       return new Promise((resolve, reject) => {
-        this.user.user = true
+        this.user.token = true
         this.user.menuList = [] // 设置动态路由
         this.routersList = routes.concat(this.user.menuList)
-        locset('user', { ...value, ...this.user })
+        locset('user', { ...this.user })
         resolve()
         // 登录接口接入
         // login(value).then(res => {

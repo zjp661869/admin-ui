@@ -6,7 +6,10 @@ import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 import Layout from '@/layout/index.vue'
 const store = useStore(pinia)
-
+/*
+  注意：
+  1、目前的二级菜单仅用children做标识长度大于2显示
+*/
 export const routes = [
   { path: "/", redirect: '/home', name: 'index' },
   { path: "/login", name: 'login', component: () => import("@/views/login/login.vue") },
@@ -48,7 +51,7 @@ const router = new Router({
 const whiteList = ['/login'] // 白名单
 router.beforeEach(async(to, from, next) => {
   NProgress.start()
-  if (store.user.user) {
+  if (store.user.token) {
     if (to.path === '/login') {
       next('/')
     } else if (store.refresh) {
