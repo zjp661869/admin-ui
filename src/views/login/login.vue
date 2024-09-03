@@ -138,7 +138,7 @@ const handleLogin = async() => {
   loginFormRef.value.validate(async(valid) => {
     if (!valid) return
     store.setUser(loginForm).then(() => {
-      proxy.$router.push('news')
+      proxy.$router.push('home').catch(() => {}) // 官方文档3.1.0
     })
   })
 }

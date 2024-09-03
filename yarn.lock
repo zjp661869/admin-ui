@@ -5004,10 +5004,10 @@ vue-intersect@^1.1.6:
   resolved "https://registry.npmmirror.com/vue-intersect/-/vue-intersect-1.1.6.tgz#2c349354bcf9221a006636cbe3f657f8e1282c1d"
   integrity sha512-m9K48wkti8K0no0F8QdiShukenLDg80JS246Lf7QWgI0XOHkBkzn921FCwLtb49Jj14KK8itVZw4iOVxPc/PsA==
 
-vue-router@3.5.0:
-  version "3.5.0"
-  resolved "https://registry.npmmirror.com/vue-router/-/vue-router-3.5.0.tgz#ae49da16a2939f8d28d66d5784b14167d661192f"
-  integrity sha512-QYrPzHMJiJCq20ezhlGok+NbrmjzhQDG6pnpJaD14Eg3NvT07s3acYz2ktxJ7vGHd/Ts4TgG9Tt8a2PA+Js5fw==
+vue-router@3.6.0:
+  version "3.6.0"
+  resolved "https://registry.npmmirror.com/vue-router/-/vue-router-3.6.0.tgz#d598616ccb9e04ee0a6dc027452c619c36e8ab08"
+  integrity sha512-pcU/wpHhsCMNkRyBKWbutP1D9+i4XlRy4dZbxb0L2MCrlbivSaea1o++wBECsK4b+dog/B0p9lajx3tUMf4UtQ==
 
 vue-router@3.6.4:
   version "3.6.4"

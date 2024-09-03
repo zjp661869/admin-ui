@@ -18,7 +18,7 @@
     "pinia": "^2.2.2",
     "vite-plugin-svg-icons": "^2.0.1",
     "vue": "^2.7.16",
-    "vue-router": "3.5.0"
+    "vue-router": "3.6.0"
   },
   "devDependencies": {
     "@originjs/vite-plugin-commonjs": "^1.0.3",
